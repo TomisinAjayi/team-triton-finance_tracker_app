@@ -27,6 +27,7 @@ function App() {
               <Route path="/get-started" component={ Signup } />
               <PrivateRoute isAuthenticated = { user.isLoggedIn } path="/add-expense" component={ Expense } />
               <PrivateRoute isAuthenticated = { user.isLoggedIn } path="/report" component={ Report } />
+              <Route path="/team" component={ Team } />
             </Switch>
           </BrowserRouter>
         </section>
